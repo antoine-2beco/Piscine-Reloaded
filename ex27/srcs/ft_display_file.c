@@ -6,7 +6,7 @@
 /*   By: ade-beco <ade-beco@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 15:40:20 by ade-beco          #+#    #+#             */
-/*   Updated: 2023/10/10 16:02:21 by ade-beco         ###   ########.fr       */
+/*   Updated: 2023/10/10 16:39:53 by ade-beco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,11 @@ void	ft_putstr(char *str)
 	while (str[i] != '\0')
 		ft_putchar(str[i++]);
 }
+
 void	ft_print_file(char *file_name, int len_file)
 {
 	char	buff[len_file];
-	int	fd;
+	int		fd;
 
 	fd = open(file_name, O_RDONLY);
 	read(fd, buff, len_file);
@@ -62,9 +63,9 @@ int	main(int argc, char *argv[])
 {
 	if (argc > 2)
 		ft_putstr("Too many arguments.\n");
-	if (argc == 1)
+	else if (argc == 1)
 		ft_putstr("File name missing.\n");
-	if (ft_file(argv[1]) == 0)
+	else if (ft_file(argv[1]) == 0)
 		ft_putstr("Cannot read file.\n");
 	return (0);
 }

@@ -6,13 +6,13 @@
 #    By: ade-beco <ade-beco@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/10 15:29:01 by ade-beco          #+#    #+#              #
-#    Updated: 2023/10/10 16:06:15 by ade-beco         ###   ########.fr        #
+#    Updated: 2023/10/10 16:24:21 by ade-beco         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	ft_display
+NAME		=	ft_display_file
 
-SRCS		=	ft_display_file.c
+SRCS		=	srcs/ft_display_file.c
 
 OBJS		=	$(SRCS:.c=.o)
 
