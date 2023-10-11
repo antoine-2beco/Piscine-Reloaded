@@ -6,7 +6,7 @@
 /*   By: ade-beco <ade-beco@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 15:35:38 by ade-beco          #+#    #+#             */
-/*   Updated: 2023/10/10 16:46:01 by ade-beco         ###   ########.fr       */
+/*   Updated: 2023/10/11 16:13:47 by ade-beco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_count_if(char **tab, int length, int (*f)(char*))
 	k = 0;
 	while (i < length)
 	{
-		if ((*f)(tab[i]) != 0)
+		if ((*f)(tab[i]))
 			k++;
 		i++;
 	}

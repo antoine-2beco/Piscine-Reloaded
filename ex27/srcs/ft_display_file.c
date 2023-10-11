@@ -6,17 +6,19 @@
 /*   By: ade-beco <ade-beco@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 15:40:20 by ade-beco          #+#    #+#             */
-/*   Updated: 2023/10/11 14:43:26 by ade-beco         ###   ########.fr       */
+/*   Updated: 2023/10/11 15:47:07 by ade-beco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include <fcntl.h>
 #include <unistd.h>
 
 void	ft_putchar(char c);
+
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
 
 void	ft_putstr(char *str)
 {
@@ -36,7 +38,7 @@ int	ft_file(char *file_name)
 	if (fd == -1)
 		return (0);
 	while (read(fd, &c, 1))
-		putchar(c);
+		ft_putchar(c);
 	close(fd);
 	return (1);
 }
