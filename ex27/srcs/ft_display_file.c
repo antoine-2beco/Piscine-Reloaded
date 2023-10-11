@@ -6,7 +6,7 @@
 /*   By: ade-beco <ade-beco@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 15:40:20 by ade-beco          #+#    #+#             */
-/*   Updated: 2023/10/11 13:42:47 by ade-beco         ###   ########.fr       */
+/*   Updated: 2023/10/11 14:43:26 by ade-beco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,6 @@
 #include <unistd.h>
 
 void	ft_putchar(char c);
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
 
 void	ft_putstr(char *str)
 {
