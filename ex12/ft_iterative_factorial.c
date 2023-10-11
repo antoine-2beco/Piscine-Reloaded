@@ -6,7 +6,7 @@
 /*   By: ade-beco <ade-beco@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 15:43:10 by ade-beco          #+#    #+#             */
-/*   Updated: 2023/10/10 14:44:58 by ade-beco         ###   ########.fr       */
+/*   Updated: 2023/10/10 18:36:39 by ade-beco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,19 @@
 
 int	ft_iterative_factorial(int nb)
 {
-	int	x;
+	unsigned int	result;
 
-	if (nb < 0)
-		return (0);
-	if (nb == 0)
-		return (1);
-	x = 1;
-	while (nb > 1)
+	result = 1;
+	while (nb > 0)
 	{
-		x *= nb;
+		result *= nb;
 		nb--;
 	}
-	return (x);
+	if (nb < 0)
+	{
+		return (0);
+	}
+	return (result);
 }
 
 /*int	main(void)

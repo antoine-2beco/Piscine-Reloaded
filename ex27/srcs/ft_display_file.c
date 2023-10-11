@@ -6,7 +6,7 @@
 /*   By: ade-beco <ade-beco@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 15:40:20 by ade-beco          #+#    #+#             */
-/*   Updated: 2023/10/10 16:46:28 by ade-beco         ###   ########.fr       */
+/*   Updated: 2023/10/11 13:42:47 by ade-beco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 #include <string.h>
 #include <fcntl.h>
 #include <unistd.h>
+
+void	ft_putchar(char c);
 
 void	ft_putchar(char c)
 {
@@ -30,32 +32,17 @@ void	ft_putstr(char *str)
 		ft_putchar(str[i++]);
 }
 
-void	ft_print_file(char *file_name, int len_file)
-{
-	char	buff[len_file];
-	int		fd;
-
-	fd = open(file_name, O_RDONLY);
-	read(fd, buff, len_file);
-	buff[len_file] = '\0';
-	ft_putstr(buff);
-	close(fd);
-}
-
 int	ft_file(char *file_name)
 {
-	int		len_file;
 	int		fd;
 	char	c;
 
 	fd = open(file_name, O_RDONLY);
 	if (fd == -1)
 		return (0);
-	len_file = 0;
 	while (read(fd, &c, 1))
-		len_file++;
+		putchar(c);
 	close(fd);
-	ft_print_file(file_name, len_file);
 	return (1);
 }
 
