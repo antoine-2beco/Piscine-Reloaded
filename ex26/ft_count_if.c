@@ -6,18 +6,18 @@
 /*   By: ade-beco <ade-beco@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 15:35:38 by ade-beco          #+#    #+#             */
-/*   Updated: 2023/10/11 16:13:47 by ade-beco         ###   ########.fr       */
+/*   Updated: 2023/10/12 16:00:53 by ade-beco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_count_if(char **tab, int length, int (*f)(char*))
+int	ft_count_if(char **tab, int (*f)(char*))
 {
 	int	i;
 	int	k;
 
 	i = 0;
 	k = 0;
-	while (i < length)
+	while (tab[i] != 0)
 	{
 		if ((*f)(tab[i]))
 			k++;
