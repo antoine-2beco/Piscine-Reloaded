@@ -6,11 +6,10 @@
 /*   By: ade-beco <ade-beco@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 15:40:20 by ade-beco          #+#    #+#             */
-/*   Updated: 2023/10/12 15:42:41 by ade-beco         ###   ########.fr       */
+/*   Updated: 2023/10/12 16:15:04 by ade-beco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_display_file.h"
 #include <fcntl.h>
 #include <unistd.h>
 
