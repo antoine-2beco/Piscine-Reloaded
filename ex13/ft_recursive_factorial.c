@@ -6,11 +6,11 @@
 /*   By: ade-beco <ade-beco@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 15:52:14 by ade-beco          #+#    #+#             */
-/*   Updated: 2023/10/13 09:54:41 by ade-beco         ###   ########.fr       */
+/*   Updated: 2023/10/13 09:57:18 by ade-beco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+/*#include <stdio.h>*/
 
 int	ft_recursive_factorial(int nb)
 {
@@ -29,7 +29,7 @@ int	ft_recursive_factorial(int nb)
 	return (result);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	printf("%d", ft_recursive_factorial(13));
-}
+}*/
