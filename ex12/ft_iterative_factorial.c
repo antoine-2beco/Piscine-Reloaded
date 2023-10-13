@@ -6,11 +6,11 @@
 /*   By: ade-beco <ade-beco@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 15:43:10 by ade-beco          #+#    #+#             */
-/*   Updated: 2023/10/10 18:36:39 by ade-beco         ###   ########.fr       */
+/*   Updated: 2023/10/13 09:55:30 by ade-beco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <stdio.h>*/
+#include <stdio.h>
 
 int	ft_iterative_factorial(int nb)
 {
@@ -26,10 +26,12 @@ int	ft_iterative_factorial(int nb)
 	{
 		return (0);
 	}
+	if (result > 479001600)
+		return (0);
 	return (result);
 }
 
-/*int	main(void)
+int	main(void)
 {
-	printf("%d", ft_iterative_factorial(3));
-}*/
+	printf("%d", ft_iterative_factorial(5));
+}
